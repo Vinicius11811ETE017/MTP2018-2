@@ -1,5 +1,5 @@
 /*p2.c*/
-/*VinÌcius Soares de Freitas MendonÁa*/
+/*Vin√≠cius Soares de Freitas Mendon√ßa*/
 /*11811ETE017*/
 
 #include <stdio.h>
@@ -107,74 +107,74 @@ return contador;
 int main(){
 int nro, opcao, nros[255], contador;
 char bits[256];
-printf("\nESCOLHA UMA OP«√O: \n 1 - BIN¡RIO/DECIMAL \n 2 - BIN¡RIO/HEXADECIMAL");
-printf("\n 3 - HEXADECIMAL/DECIMAL \n 4 ñ HEXADECIMAL/BIN¡RIO \n 5 - DECIMAL/BIN¡RIO ");
+printf("\nESCOLHA UMA OP√á√ÉO: \n 1 - BIN√ÅRIO/DECIMAL \n 2 - BIN√ÅRIO/HEXADECIMAL");
+printf("\n 3 - HEXADECIMAL/DECIMAL \n 4 ‚Äì HEXADECIMAL/BIN√ÅRIO \n 5 - DECIMAL/BIN√ÅRIO ");
 printf("\n DECIMAL/HEXADECIMAL \n 7 - OCTAL/DECIMAL \n 8 - DECIMAL/OCTAL ");
 printf("\n DIGITE OUTRO VALOR PARA SAIR DO PROGRAMA");
 do{
 contador = 0; nro = 0;
-printf("\nOpÁ„o: ");
+printf("\nOp√ß√£o: ");
 scanf("%d",&opcao); getchar();
 switch(opcao){
 case 1:
-printf("Informe um n˙mero bin·rio: ");
+printf("Informe um n√∫mero bin√°rio: ");
 scanf("%s", bits);
 contador = string_vetor(bits, nros, contador);
 nro = paradecimal(bits, nros, nro, contador, 2);
-printf("\n	O n˙mero em decimal È: %s \n", bits);
+printf("\n	O n√∫mero em decimal √©: %s \n", bits);
 break;
 case 2:
-printf("Informe um n˙mero bin·rio: ");
+printf("Informe um n√∫mero bin√°rio: ");
 scanf("%s", bits);
 contador = string_vetor(bits, nros, contador);
 nro = paradecimal(bits, nros, nro, contador, 2);
 contador = decimalpara(nros, nro, contador, 16);
 contador = vetor_string(bits, nros, contador);
-printf("\n	O n˙mero em hexadecimal È: %s \n", bits);
+printf("\n	O n√∫mero em hexadecimal √©: %s \n", bits);
 break;
 case 3:
-printf("Informe um n˙mero hexadecimal: ");
+printf("Informe um n√∫mero hexadecimal: ");
 scanf("%s", bits);
 contador = string_vetor(bits, nros, contador);
 nro = paradecimal(bits, nros, nro, contador, 16);
-printf("\n	O n˙mero em decimal È: %s \n", bits);
+printf("\n	O n√∫mero em decimal √©: %s \n", bits);
 break;
 case 4:
-printf("Informe um n˙mero hexadecimal: ");
+printf("Informe um n√∫mero hexadecimal: ");
 scanf("%s", bits);
 contador = string_vetor(bits, nros, contador);
 nro = paradecimal(bits, nros, nro, contador, 16);
 contador = decimalpara(nros, nro, contador, 2);
 contador = vetor_string(bits, nros, contador);
-printf("\n	O n˙mero em bin·rio È: %s \n", bits);
+printf("\n	O n√∫mero em bin√°rio √©: %s \n", bits);
 break;
 case 5:
-printf("Informe um n˙mero decimal: ");
+printf("Informe um n√∫mero decimal: ");
 scanf("%d", &nro);
 contador = decimalpara(nros, nro, contador, 2);
 contador = vetor_string(bits, nros, contador);
-printf("\n	O n˙mero em bin·rio È: %s \n", bits);
+printf("\n	O n√∫mero em bin√°rio √©: %s \n", bits);
 break;
 case 6:
-printf("Informe um n˙mero decimal: ");
+printf("Informe um n√∫mero decimal: ");
 scanf("%d", &nro);
 contador = decimalpara(nros, nro, contador, 16);
 contador = vetor_string(bits, nros, contador);
-printf("\n	O n˙mero em hexadecimal È: %s \n", bits);
+printf("\n	O n√∫mero em hexadecimal √©: %s \n", bits);
 break;
 case 7:
-printf("Informe um n˙mero octal: ");
+printf("Informe um n√∫mero octal: ");
 scanf("%s", bits);
 contador = string_vetor(bits, nros, contador);
 nro = paradecimal(bits, nros, nro, contador, 8);
-printf("\n	O n˙mero em decimal È: %s \n", bits);
+printf("\n	O n√∫mero em decimal √©: %s \n", bits);
 break;
 case 8:
-printf("Informe um n˙mero decimal: ");
+printf("Informe um n√∫mero decimal: ");
 scanf("%d", &nro);
 contador = decimalpara(nros, nro, contador, 8);
-contador = vetor_string(bits, nros, contadorador);
-printf("\n	O n˙mero em octal È: %s \n", bits);
+contador = vetor_string(bits, nros, contador);
+printf("\n	O n√∫mero em octal √©: %s \n", bits);
 break;
 default:
 return 0;
